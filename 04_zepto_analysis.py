@@ -27,7 +27,7 @@ city_median = sales.groupby("city")["delivery_time_mins"].transform("median")
 sales["delivery_time_mins"] = sales["delivery_time_mins"].fillna(city_median)
 sales["delivery_time_mins"] = sales["delivery_time_mins"].fillna(sales["delivery_time_mins"].median())
 
-sales.to_csv("zepto_sales_cleaned.csv", index=False)
+sales.to_csv("03_zepto_sales_cleaned.csv", index=False)
 
 # merge sales with products
 all_orders = products.merge(sales, on="product_id")
