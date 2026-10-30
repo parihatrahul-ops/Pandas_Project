@@ -14,8 +14,8 @@ dark = "#4B2E83"
 light = "#C9B8E8"
 
 # load data
-products = pd.read_csv("zepto_products.csv")
-sales = pd.read_csv("zepto_sales.csv")
+products = pd.read_csv("01_zepto_products.csv")
+sales = pd.read_csv("02_zepto_sales.csv")
 
 # clean sales data
 sales = sales.drop_duplicates()
